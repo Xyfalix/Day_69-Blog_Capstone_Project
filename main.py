@@ -89,7 +89,7 @@ class Comment(db.Model, Base):
     # One to Many Parent child relationship between BlogPost(Parent) & Comment(Child)
     parent_post = relationship("BlogPost", back_populates="comments")
     post_id = db.Column(db.Integer, db.ForeignKey('blog_posts.id'))
-db.create_all()
+# db.create_all()
 
 
 ##CREATE REGISTER FORM
